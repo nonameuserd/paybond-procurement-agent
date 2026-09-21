@@ -10,7 +10,7 @@ cd paybond-procurement-agent
 cp .env.example .env.local
 paybond login
 npm install
-npm run smoke   # or: paybond agent sandbox smoke --policy-file paybond.policy.yaml --operation procurement.submit_po --requested-spend-cents 12000 --result-body '{"status":"completed","cost_cents":12000}' --format json
+npm run smoke
 ```
 
 ## Run the demo
@@ -25,5 +25,5 @@ Local `paybond.policy.yaml` is yours to edit. Bundled preset: **custom**.
 
 ## Docs
 
-- [Agent quickstart](https://docs.paybond.ai/kit/quickstart-agent)
-- [Agent middleware](https://docs.paybond.ai/kit/agent-middleware)
+- [Agent quickstart](https://paybond.ai/docs/kit/quickstart-agent)
+- [Agent middleware](https://paybond.ai/docs/kit/agent-middleware)
